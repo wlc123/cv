@@ -49,7 +49,7 @@
 - **OPPO：视频插帧**
 	- 描述：将现有视频帧率插值2倍
 	- 职责：独立完成整体算法方案设计与实现，包括网络结构和loss设计，在转场等失败情况实现同步自检
-	- 效果：[视频](https://github.com/wlc123/cv/blob/main/video_frame_interpolate/README.md)，左侧为插帧后效果，服务器端前项时间约10ms
+	- 效果：[效果图](https://github.com/wlc123/cv/blob/main/video_frame_interpolate/README.md)，在Vimeo90K测试集上PSNR33.5，只有4GFlops计算量，在服务器端前向时间9ms
 - **OPPO：游戏数字识别**
 	- 描述：识别游戏截屏中的数字，做为闪回键倒计时依据
 	- 职责：独立完成整体算法方案设计与实现，使用神经网络对数字进行分类
