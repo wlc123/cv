@@ -20,8 +20,8 @@
 
  ## <img src="assets/info-circle-solid.svg" width="30px"> 个人信息 
 
- - 年龄:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;29(1992)
- - 工作经验：&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;4 年
+ - 年龄:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;30(1992)
+ - 工作经验：&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;5年
  - 工作地点：&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;深圳
 
 ## <img src="assets/graduation-cap-solid.svg" width="30px"> 教育经历
@@ -38,40 +38,18 @@
 
 ## <img src="assets/project-diagram-solid.svg" width="30px"> 项目经历
 
-- **OPPO：动漫人脸生成**
-	- 描述：依据当前人脸，生成画风与指定动漫IP相像的人脸
-	- 职责：负责整体算法方案设计与实现，包括网络结构和loss设计，数据集预处理
-	- 效果：[效果图](https://github.com/wlc123/cv/blob/main/anime_face/README.md)
-- **OPPO：AI调色**
-	- 描述：照图修图，将风格图的颜色信息应用于原始图
-	- 职责：独立完成整体算法方案设计与安卓端工程化，包括设计传统算法生成数据集，设计网络进行训练，设计预处理算法消除色阶，安卓端落地及优化
-	- 效果：[效果图](https://github.com/wlc123/cv/blob/main/AI_toning/README.md)，在安卓端8350芯片3000x4000图像约85ms；于FindX3落地
-- **OPPO：视频插帧**
-	- 描述：将现有视频帧率插值2倍
-	- 职责：独立完成整体算法方案设计与实现，包括网络结构和loss设计，在转场等失败情况实现同步自检
-	- 效果：[效果图](https://github.com/wlc123/cv/blob/main/video_frame_interpolate/README.md)，在Vimeo90K测试集上PSNR33.5，1080x1920图像每帧计算量仅4GFlops，在服务器端前向时间9ms
-- **OPPO：游戏数字识别**
-	- 描述：识别游戏截屏中的数字，做为闪回键倒计时依据
-	- 职责：独立完成整体算法方案设计与实现，使用神经网络对数字进行分类
-	- 效果：[视频](https://github.com/wlc123/cv/blob/main/game_ocr/README.md)，落地于ColorOS闪回键模块
+### &ensp;&ensp;<img src="assets/rss-solid.svg" width="15px">  3D视觉相关
 - **OPPO：三维小物体重建**
 	- 描述：使用低成本TOF相机实现桌面级小物体重建
 	- 职责：独立完成整体算法方案设计与实现，包括回环检测与全局优化，深度图融合，纹理贴图
 	- 效果：[效果图](https://github.com/wlc123/cv/blob/main/object_recon/README.md)，平均误差5.5mm，对标三方达到业界领先水平，在安卓端流畅运行
-- **云之梦：人脸光照均匀化**
-	- 描述：改善人脸照片光照情况，矫正“阴阳脸”，缓解过曝
-	- 职责：独立完成整体算法方案设计与实现，包括使用统计学习方案拟合光照变换曲线，使用HDR压缩的方法消除高光
-- **云之梦：远近脸变换**
-	- 描述：将一张近距离的自拍照中人脸，变换成远距离人脸，消除透视畸变
-	- 职责：独立完成整体算法方案设计与实现，包括使用3D人脸数据库生成数据集，使用人脸关键点回归向量场
-	- 效果：[效果图](https://github.com/wlc123/cv/blob/main/face_distortion_elimination/README.md)
+- **初速度：基于车道线的车辆定位**
+	- 描述：已知车道线的点云地图和当前车道线分割图，计算车辆SE3pose
+	- 职责：独立完成算法原理公式推倒和验证，实现快速的车辆定位功能
+	- 结果：[文档](https://github.com/wlc123/cv/blob/main/se3track/README.pdf)
 - **初速度：鱼眼特征点匹配和相机标定**
 	- 描述：车载四路鱼眼相机之间的特征点匹配，并用以完成相机标定
 	- 职责：改进特征点匹配算法；通过一致性筛选特征点；使用鱼眼特征点完成相机标定
-- **初速度：相机自检**
-	- 描述：通过传统机器学习方法，完成车载鱼眼相机自检
-	- 职责：设计和实现自检算法，训练BRIEF描述子应用于相机自检
-	- 效果：准确率达到85%，召回率90%；优化运行速度，在CPUI5上大约在0.5ms
 - **初速度：APA(Automatic Parking Assist)**
 	- 描述：带车位线场景的自动泊车
 	- 职责：优化算法，提升精度；识别车位信息
@@ -90,6 +68,39 @@
 - **毕设：基于图案轮廓的视觉SLAM算法**
 	- 描述：通过轮廓线的几何形状作为特征，完成SLAM主要功能
 	- 效果：平均消耗时间大约是ORB-SLAM的44.6%，结果轨迹与ORB-SLAM接近，误差在1e-2左右
+  
+### &ensp;&ensp;<img src="assets/rss-solid.svg" width="15px">  机器学习相关
+- **OPPO：智能创作引擎**
+  - 描述：将创作认为根据用户喜好选择合适的图像处理算法进行修图，智能创作引擎提供一键式的图像&视频处理能力
+  - 职责：智能创作引擎架构设计；完成人像时刻项目，从人像视频中选择高光帧；领导AI人像项目，实现自动人像处理，作为ColorOS13重点项目
+  - 效果：[人像时刻](https://github.com/wlc123/cv/blob/main/human_spot/README.md)，[AI人像](https://github.com/wlc123/cv/blob/main/AI_human/README.md)
+- **OPPO：动漫人脸生成**
+	- 描述：依据当前人脸，生成画风与指定动漫IP相像的人脸
+	- 职责：负责整体算法方案设计与实现，包括网络结构和loss设计，数据集预处理
+	- 效果：[效果图](https://github.com/wlc123/cv/blob/main/anime_face/README.md)
+- **OPPO：AI调色**
+	- 描述：照图修图，将风格图的颜色信息应用于原始图
+	- 职责：独立完成整体算法方案设计与安卓端工程化，包括设计传统算法生成数据集，设计网络进行训练，设计预处理算法消除色阶，安卓端落地及优化
+	- 效果：[效果图](https://github.com/wlc123/cv/blob/main/AI_toning/README.md)，在安卓端8350芯片3000x4000图像约85ms；于FindX3落地
+- **OPPO：视频插帧**
+	- 描述：将现有视频帧率插值2倍
+	- 职责：独立完成整体算法方案设计与实现，包括网络结构和loss设计，在转场等失败情况实现同步自检
+	- 效果：[效果图](https://github.com/wlc123/cv/blob/main/video_frame_interpolate/README.md)，在Vimeo90K测试集上PSNR33.5，1080x1920图像每帧计算量仅4GFlops，在服务器端前向时间9ms
+- **OPPO：游戏数字识别**
+	- 描述：识别游戏截屏中的数字，做为闪回键倒计时依据
+	- 职责：独立完成整体算法方案设计与实现，使用神经网络对数字进行分类
+	- 效果：[视频](https://github.com/wlc123/cv/blob/main/game_ocr/README.md)，落地于ColorOS闪回键模块
+- **初速度：相机自检**
+	- 描述：通过传统机器学习方法，完成车载鱼眼相机自检
+	- 职责：设计和实现自检算法，训练BRIEF描述子应用于相机自检
+	- 效果：准确率达到85%，召回率90%；优化运行速度，在CPUI5上大约在0.5ms
+- **云之梦：人脸光照均匀化**
+	- 描述：改善人脸照片光照情况，矫正“阴阳脸”，缓解过曝
+	- 职责：独立完成整体算法方案设计与实现，包括使用统计学习方案拟合光照变换曲线，使用HDR压缩的方法消除高光
+- **云之梦：远近脸变换**
+	- 描述：将一张近距离的自拍照中人脸，变换成远距离人脸，消除透视畸变
+	- 职责：独立完成整体算法方案设计与实现，包括使用3D人脸数据库生成数据集，使用人脸关键点回归向量场
+	- 效果：[效果图](https://github.com/wlc123/cv/blob/main/face_distortion_elimination/README.md)
 
 ## <img src="assets/tools-solid.svg" width="30px"> 技能清单
 
