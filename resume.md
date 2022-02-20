@@ -20,25 +20,24 @@
 
  ## <img src="assets/info-circle-solid.svg" width="30px"> 个人信息 
 
- - 年龄:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;30(1992)
+ - 年龄：&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;30(1992)
  - 工作经验：&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;5年
  - 工作地点：&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;深圳
 
 ## <img src="assets/graduation-cap-solid.svg" width="30px"> 教育经历
 
 - 硕士&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;哈尔滨工业大学&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;微电子学与固体电子学&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2014.09~2017.01
-- 学士&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;哈尔滨工业大学&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;电子信息科学与技术&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2012.09~2016.07
+- 学士&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;哈尔滨工业大学&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;电子信息科学与技术&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2010.09~2014.07
 
 ## <img src="assets/briefcase-solid.svg" width="30px"> 工作经历
 
--  OPPO广东移动通信有限公司&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;高级影像算法工程师&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2019.07至今
--  云之梦科技有限公司(倒闭)&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;算法工程师&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2019.03-2019.06
--  北京初速度科技有限公司(Momenta)&ensp;&ensp;&ensp;&ensp;SLAM算法工程师&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2018.06-2019.03
+-  OPPO广东移动通信有限公司&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;高级影像算法工程师&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2019.06至今
+-  北京初速度科技有限公司(Momenta)&ensp;&ensp;&ensp;&ensp;SLAM算法工程师&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2018.06-2019.04
 -  深圳商汤科技有限公司&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;研究员&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2016.09-2018.06
 
 ## <img src="assets/project-diagram-solid.svg" width="30px"> 项目经历
 
-### &ensp;&ensp;<img src="assets/rss-solid.svg" width="15px">  3D视觉相关
+### &ensp;&ensp;<img src="assets/rss-solid.svg" width="15px">  3D视觉类
 - **OPPO：三维小物体重建**
 	- 描述：使用低成本TOF相机实现桌面级小物体重建
 	- 职责：独立完成整体算法方案设计与实现，包括回环检测与全局优化，深度图融合，纹理贴图
@@ -69,15 +68,15 @@
 	- 描述：通过轮廓线的几何形状作为特征，完成SLAM主要功能
 	- 效果：平均消耗时间大约是ORB-SLAM的44.6%，结果轨迹与ORB-SLAM接近，误差在1e-2左右
   
-### &ensp;&ensp;<img src="assets/rss-solid.svg" width="15px">  机器学习相关
-- **OPPO：智能创作引擎**
-  - 描述：将创作认为根据用户喜好选择合适的图像处理算法进行修图，智能创作引擎提供一键式的图像&视频处理能力
-  - 职责：智能创作引擎架构设计；完成人像时刻项目，从人像视频中选择高光帧；领导AI人像项目，实现自动人像处理，作为ColorOS13重点项目
-  - 效果：[人像时刻](https://github.com/wlc123/cv/blob/main/human_spot/README.md)，[AI人像](https://github.com/wlc123/cv/blob/main/AI_human/README.md)
+### &ensp;&ensp;<img src="assets/rss-solid.svg" width="15px">  深度学习&机器学习类
 - **OPPO：动漫人脸生成**
 	- 描述：依据当前人脸，生成画风与指定动漫IP相像的人脸
 	- 职责：负责整体算法方案设计与实现，包括网络结构和loss设计，数据集预处理
 	- 效果：[效果图](https://github.com/wlc123/cv/blob/main/anime_face/README.md)
+- **OPPO：老照片修复**
+  - 描述：对老照片进行翻新
+  - 职责：设计算法方案，调整网络结构和参数；设计两次退化（传统+网络）方法，构建数据集
+  - 效果：[效果图](https://github.com/wlc123/cv/blob/main/face_restore/README.md)，在相册落地
 - **OPPO：AI调色**
 	- 描述：照图修图，将风格图的颜色信息应用于原始图
 	- 职责：独立完成整体算法方案设计与安卓端工程化，包括设计传统算法生成数据集，设计网络进行训练，设计预处理算法消除色阶，安卓端落地及优化
@@ -94,16 +93,29 @@
 	- 描述：通过传统机器学习方法，完成车载鱼眼相机自检
 	- 职责：设计和实现自检算法，训练BRIEF描述子应用于相机自检
 	- 效果：准确率达到85%，召回率90%；优化运行速度，在CPUI5上大约在0.5ms
-- **云之梦：人脸光照均匀化**
+- **商汤：人脸光照均匀化**
 	- 描述：改善人脸照片光照情况，矫正“阴阳脸”，缓解过曝
 	- 职责：独立完成整体算法方案设计与实现，包括使用统计学习方案拟合光照变换曲线，使用HDR压缩的方法消除高光
-- **云之梦：远近脸变换**
+- **商汤：远近脸变换**
 	- 描述：将一张近距离的自拍照中人脸，变换成远距离人脸，消除透视畸变
 	- 职责：独立完成整体算法方案设计与实现，包括使用3D人脸数据库生成数据集，使用人脸关键点回归向量场
 	- 效果：[效果图](https://github.com/wlc123/cv/blob/main/face_distortion_elimination/README.md)
 
-## <img src="assets/tools-solid.svg" width="30px"> 技能清单
+### &ensp;&ensp;<img src="assets/rss-solid.svg" width="15px">  技术管理类
+- **OPPO：智能创作引擎**
+  - 描述：将创作理解为根据用户喜好选择合适的图像处理算法进行修图，即智能创作=丰富的素材库+多样的算法库+个性化的美学推荐，智能创作引擎提供一键式的图像&视频处理能力
+  - 职责：智能创作引擎架构设计；完成人像时刻项目，从人像视频中选择高光帧，对标三星一键多拍，80%选帧效果大于等于三星；领导AI人像项目，实现自动人像处理
+  - 效果：[人像时刻](https://github.com/wlc123/cv/blob/main/human_spot/README.md)，将在ColorOS12.1，Find X5落地；[AI人像](https://github.com/wlc123/cv/blob/main/AI_human/README.md)，规划在相册ColorOS13.1
+- **OPPO：部落版本SE**
+  - 描述：作为智能产品部落ColorOS13.0版本SE，构建AI能力，主要有超级文本和AON
+  - 职责：参与产品规划，梳理行业前景；承接产品策划，明确算法规格；设计技术方案，拆分模块，落实到具体团队，明确验收方法和验收标准；识别项目风险，保证项目交付
+  - 效果：获得部落优秀个人荣誉；智能产品部落在版本过点多次被表扬，STR2B位列第一，STR2第三
+- **OPPO：相册AI能力构建**
+  - 描述：根据相机18个月产品规划构建技术栈，并规划技术演进
+  - 职责：分析相册痛点分析，给出技术解决方案；制定相册AI技术规划；设计技术评估方案，制定算法准入标准
+  - 效果：在OS13.1相册标签标签逐渐扩展到1000类、视频标签500类；OS13.1增加OLIVE实况图像，算法从中选出推荐帧，并实现后处理效果，包括超分、长曝光等
 
+## <img src="assets/tools-solid.svg" width="30px"> 技能清单
 - 深度学习
 - 三维视觉
 - C++、Python、MATLAB
