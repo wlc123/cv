@@ -10,11 +10,6 @@
              <img src="assets/envelope-solid.svg" width="18px">
              410530459@qq.com
          </span>
-         ·
-         <span>
-             <img src="assets/github-brands.svg" width="18px">
-             <a href="https://github.com/wlc123/cv">resume</a>
-         </span>
      </div>
  </center>
 
